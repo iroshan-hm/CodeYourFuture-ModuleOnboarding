@@ -49,13 +49,31 @@ main {
 
 .article .image-placeholder {
   width: 100%;
-  height: 200px;
-  background-color: #eaeaea;
+  height: 240px;
+  /* background-color: #eaeaea; */
   margin-bottom: 1rem;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  height: 240px; /* Adjust the height */
+  float: left; /* Align the image to the left */
+  margin-right: 15px; /* Add spacing between the image and text */
+  display: block;
+}
+
+.article .content {
+  overflow: hidden; /* Ensure proper layout when using float */
+  text-align: left; /* Align text content to the left */
 }
 
 .article .content h2 {
   margin: 0 0 0.5rem 0;
+}
+
+.article .content p,
+.article .content a {
+  text-align: left; /* Ensure all text content is aligned to the left */
 }
 
 .btn {
