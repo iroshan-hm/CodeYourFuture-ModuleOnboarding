@@ -49,17 +49,15 @@ main {
 
 .article .image-placeholder {
   width: 100%;
-  height: 240px;
+  height: 100%;
   /* background-color: #eaeaea; */
   margin-bottom: 1rem;
 }
 
 .image-placeholder img {
-  max-width: 100%;
-  height: 240px; /* Adjust the height */
-  float: left; /* Align the image to the left */
-  margin-right: 15px; /* Add spacing between the image and text */
-  display: block;
+  max-width: 100%; /* Ensures the image does not exceed the width of its container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Prevents inline spacing issues */
 }
 
 .article .content {
@@ -87,9 +85,12 @@ main {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f0f0f0;
   text-align: center;
   padding: 1rem;
-  background-color: #f0f0f0;
   font-size: 0.9rem;
   color: #333;
 }

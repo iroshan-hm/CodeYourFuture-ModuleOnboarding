@@ -13,10 +13,22 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <!-- Customer Name (at least 2 characters) -->
+        <label for="name">Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          minlength="2" 
+          required 
+          aria-required="true"
+          autocomplete="name"
+          pattern="[A-Za-z\s]{2,}"
+          title="Name must be at least 2 letters and contain only letters and spaces."
+        >
+        
+
+        
       </form>
     </main>
     <footer>
