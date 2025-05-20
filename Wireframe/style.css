@@ -37,6 +37,16 @@ main {
   flex-wrap: wrap;
 }
 
+.articles-grid.two-column {
+  display: flex;
+  gap: 20px; /* Adjust spacing between columns */
+}
+
+.articles-grid.two-column .article {
+  flex: 1; /* Ensures equal width for both columns */
+  min-width: 0; /* Prevents overflow issues */
+}
+
 .article .image-placeholder {
   width: 100%;
   height: 200px;
