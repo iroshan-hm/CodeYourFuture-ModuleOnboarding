@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- Customer Name (at least 2 characters) -->
-        <label for="name">Name:</label>
-        <input 
-          type="text" 
-          id="name" 
-          name="name" 
-          minlength="2" 
-          required 
-          aria-required="true"
-          autocomplete="name"
-          pattern="[A-Za-z\s]{2,}"
-          title="Name must be at least 2 letters and contain only letters and spaces."
-        >
-        
 
-        
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>My form exercise</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Pick</h1>
+  </header>
+  <main>
+    <form>
+      <!-- Customer Name (at least 2 characters) -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" minlength="2" required aria-required="true" autocomplete="name"
+        pattern="[A-Za-z\s]{2,}" title="Name must be at least 2 letters and contain only letters and spaces.">
+
+      <br>
+      <!-- Customer Email (must be valid) -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+
+    </form>
+  </main>
+  <footer>
+    <!-- change to your name-->
+    <h2>By HOMEWORK SOLUTION</h2>
+  </footer>
+</body>
+
 </html>
